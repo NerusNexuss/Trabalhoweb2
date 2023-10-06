@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cadastro de Imóveis</title>
+    <!-- Adicione os links para os estilos do Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+  </head>
+  <body class="bg-secondary">
+    <div class="container">
+      <h1 class="mt-4 text-center">Cadastro de Imóveis</h1>
+
+      <!-- Formulário para cadastrar casas -->
+      <div class="mt-4 ">
+        <h2>Cadastrar Casa</h2>
+        <form id="casaForm">
+          <div class="mb-3">
+            <label for="rua" class="form-label">Rua:</label>
+            <input type="text" class="form-control  " id="rua" value="1" required />
+          </div>
+          <div class="mb-3">
+            <label for="areaTerreno" class="form-label">Área do Terreno:</label>
+            <input type="text" class="form-control " id="areaTerreno" value="1" required />
+          </div>
+          <div class="mb-3">
+            <label for="areaConstruida" class="form-label"
+              >Área Construída:</label
+            >
+            <input
+              type="text"
+              class="form-control "
+              id="areaConstruida"
+              value="1" required
+            /> 
+            <div class="mb-3">
+              <label for="preco" class="form-label">preço:</label>
+              <input type="text" class="form-control " id="preco" value="1" required />
+            </div> 
+            <div class="mb-3">
+              <label for="numero" class="form-label">numero da casa:</label>
+              <input type="text" class="form-control " id="numero" value="1" required />
+            </div>
+          </div> 
+          <div class="mb-3">
+            <label for="bairro" class="form-label">Bairro:</label>
+            <input type="text" class="form-control " id="bairro" value="1" required />
+          </div>
+          <div class="mb-3">
+            <label for="cep" class="form-label">Cep:</label>
+            <input type="text" class="form-control " id="cep" value="1" required />
+          </div>
+          <div class="mb-3">
+            <label for="numeroQuartos" class="form-label">Numeros de quartos:</label>
+            <input type="text" class="form-control " id="numeroQuartos" value="1" required />
+          </div> 
+          <div class="mb-3">
+            <label for="banheiro" class="form-label">Banheiro:</label>
+            <input type="text" class="form-control " id="banheiro" value="1" required />
+          </div>
+        </div>
+          <button
+            type="button"
+            class="btn btn-primary"
+            onclick="cadastrarCasa()"
+          >
+            Cadastrar Casa
+          </button>
+        </form>
+      </div>
+
+      <!-- Lista de casas cadastradas -->
+      <div class="mt-4">
+        <h2>Lista de Casas</h2>
+        <ul id="listaCasas" class="list-unstyled"></ul>
+      </div>
+
+      <!-- Formulário para cadastrar apartamentos -->
+      <div class="mt-4">
+        <h2>Cadastrar Apartamento</h2>
+        <form id="apartamentoForm">
+          <div class="mb-3">
+            <label for="ruaApto" class="form-label">Rua:</label>
+            <input type="text" class="form-control" id="ruaApto" value="1" required />
+          </div>
+          <div class="mb-3">
+            <label for="metragem" class="form-label">Metragem:</label>
+            <input type="text" class="form-control" id="metragem" value="1" required />
+          </div>
+          <div class="mb-3">
+            <label for="condominio" class="form-label">Condomínio:</label>
+            <input type="text" class="form-control" id="condominio" value="1" required />
+          </div> 
+          <div class="mb-3">
+            <label for="preco" class="form-label">preço:</label>
+            <input type="text" class="form-control " id="preco" value="1" required />
+          </div> 
+          <div class="mb-3">
+            <label for="numero" class="form-label">numero da casa:</label>
+            <input type="text" class="form-control " id="numero" value="1" required />
+          </div>
+        </div> 
+        <div class="mb-3">
+          <label for="bairro" class="form-label">Bairro:</label>
+          <input type="text" class="form-control " id="bairro" value="1" required />
+        </div>
+        <div class="mb-3">
+          <label for="cep" class="form-label">Cep:</label>
+          <input type="text" class="form-control " id="cep" value="1" required />
+        </div>
+        <div class="mb-3">
+          <label for="numeroQuartos" class="form-label">Numeros de quartos:</label>
+          <input type="text" class="form-control " id="numeroQuartos" value="1" required />
+        </div> 
+        <div class="mb-3">
+          <label for="banheiro" class="form-label">Banheiro:</label>
+          <input type="text" class="form-control " id="banheiro" value="1" required />
+        </div>
+      </div>
+          <button
+            type="button"
+            class="btn btn-primary"
+            onclick="cadastrarApartamento()"
+          >
+            Cadastrar Apartamento
+          </button>
+        </form>
+      </div>
+
+      <!-- Lista de apartamentos cadastrados -->
+      <div class="mt-4">
+        <h2>Lista de Apartamentos</h2>
+        <ul id="listaApartamentos"></ul>
+      </div>
+    </div>
+
+    <!-- Adicione o script.js no final do corpo da página -->
+    <script src="script.js"></script>
+  </body>
+</html>
